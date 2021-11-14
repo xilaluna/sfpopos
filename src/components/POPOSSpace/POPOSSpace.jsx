@@ -14,11 +14,13 @@ const POPOSSpace = (props) => {
           alt="Hello"
         />
       </Link>
-      <Link to={`/details/${id}`}>
+      <Link className="POPOSSpace-title" to={`/details/${id}`}>
         <h1>{name}</h1>
       </Link>
-      <div>{address}</div>
-      <div>{hours}</div>
+      <div className="POPOSSpace-info">
+        <div>{address}</div>
+        <div>{hours}</div>
+      </div>
     </div>
   )
 }
